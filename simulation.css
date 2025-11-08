@@ -1,0 +1,108 @@
+/* General Layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  border-bottom: 2px solid #00FFFF;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #00FFFF;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Panels */
+.controls-panel,
+.dashboard-panel {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.controls-panel h3,
+.dashboard-panel h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #555;
+  padding-bottom: 8px;
+}
+
+/* Controls */
+.control-group {
+  margin-bottom: 15px;
+}
+.control-group label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+.control-group input[type="range"] {
+  width: 100%;
+}
+.control-group.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.control-group.toggle input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dashboard */
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95em;
+  padding: 6px 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+.stat-item:last-child {
+  border-bottom: none;
+}
+.stat-item span {
+  font-weight: bold;
+}
+.stat-item.danger span {
+  color: #FF4136;
+}
+.stat-item.safe span {
+  color: #2ECC40;
+}
+
+/* Simulation Canvas */
+.simulation-canvas {
+  background-color: #000;
+  border: 2px solid #00FFFF;
+  border-radius: 8px;
+}
+
+.simulation-area {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
